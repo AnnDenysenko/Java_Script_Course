@@ -66,48 +66,32 @@ let monthNumber = +prompt("Enter the month's number: ");
 
 switch(monthNumber){
     case 1:
-    console.log("It's winter season!");
-    break
 
     case 2:
-    console.log("It's winter season!");
-    break
 
     case 3:
     console.log("It's winter season!");
     break
     
     case 4:
-    console.log("It's spring season!");
-    break
 
     case 5:
-    console.log("It's spring season!");
-    break
 
     case 6:
     console.log("It's spring season!");
     break
 
     case 7:
-    console.log("It's summer season!");
-    break
 
     case 8:
-    console.log("It's summer season!");
-    break
 
     case 9:
     console.log("It's summer season!");
     break
 
     case 10:
-    console.log("It's autumn season!");
-    break
 
     case 11:
-    console.log("It's autumn season!");
-    break
 
     case 12:
     console.log("It's autumn season!");
@@ -122,35 +106,70 @@ switch(monthNumber){
 
 // #4
 
+// while loop
+
 let iteration = 0;
 
 while(iteration <= 10){
-    console.log(i);
+    console.log(iteration);
     iteration++;
 }
 
 
+// for loop
+
+for (let i = 0; i <=10; i++){
+    console.log(i);
+}
+
 // #5
 
-let numberBegin = +prompt("Enter your first number: ");
-let numberEnd = +prompt("Enter your second number: ");
+//for loop
 
-for(let i = numberBegin; i<=numberEnd; i++){
+let numberBegin1 = +prompt("Enter your first number: ");
+let numberEnd1 = +prompt("Enter your second number: ");
+
+for(let i = numberBegin1; i<=numberEnd1; i++){
     if(i%5 === 0){
         console.log(i);
     }
 }
 
 
-// #6
+//while loop
 
-let numberToMultiply = 3;
+let numberBegin2 = +prompt("Enter your first number: ");
+let numberEnd2 = +prompt("Enter your second number: ");
 
-for (let i = 1; i <= 9; i++){
-    let result = i * numberToMultiply;
-    console.log(`${numberToMultiply} multiplied by the number of ${i} is ${result};`);
+while (numberBegin2 <= numberEnd2){
+    numberBegin2++;
+    if(numberBegin2%2 === 0)
+    console.log(numberBegin2);
 }
 
+
+// #6
+
+//for loop
+
+let numberToMultiply1 = 3;
+
+for (let i = 1; i <= 9; i++){
+    let result = i * numberToMultiply1;
+    console.log(`${numberToMultiply1} multiplied by the number of ${i} is ${result};`);
+}
+
+
+// while loop
+
+let numberToMultiply2 = 3;
+let iter = 1;
+
+while (iter <= 9){
+    iter++;
+    result = iter * numberToMultiply2;
+    console.log(`${numberToMultiply2} multiplied by the number of ${iter} is ${result};`);
+}
 
 // Task 2
 
@@ -170,7 +189,6 @@ for (let i = 1; i <= enteredNumber; i++){
     result *= i;
 }
 console.log(`The factorial of ${enteredNumber} is ${result}.`); 
-
 
 
 // Task 4
