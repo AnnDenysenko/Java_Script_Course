@@ -65,35 +65,35 @@ let monthNumber = +prompt("Enter the month's number: ");
 // }
 
 switch(monthNumber){
+    case 12:
+
     case 1:
 
     case 2:
-
-    case 3:
     console.log("It's winter season!");
     break
     
+    case 3:
+
     case 4:
 
     case 5:
-
-    case 6:
     console.log("It's spring season!");
     break
+
+    case 6:
 
     case 7:
 
     case 8:
-
-    case 9:
     console.log("It's summer season!");
     break
+
+    case 9:
 
     case 10:
 
     case 11:
-
-    case 12:
     console.log("It's autumn season!");
     break
 
@@ -195,7 +195,7 @@ console.log(`The factorial of ${enteredNumber} is ${result}.`);
 
 let userInput = +prompt("Enter number of rows in the triangle: ");
 let triangle = "*";
-let i = 0;
+let i = 1;
 
 while(i <= userInput){
 console.log(triangle);
