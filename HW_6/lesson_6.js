@@ -34,12 +34,17 @@ console.log(convertToBinary(2227));
 // #4
 
 function generateRandomFloat(n) {
-    return Math.random() * 100;
+
+  // generating a random number from 0 to 100
+    let randomNumber = Math.random() * 100;
+    
+  // round up a received random number to n-amount of numbers after comma
+    let generatedResult = randomNumber.toFixed(n);
+    return parseFloat(generatedResult);
 
 }
-let generatedResult = generateRandomFloat(2);
 
-console.log(generatedResult.toFixed(5));
+console.log(generateRandomFloat(5));
 
 
 
@@ -47,10 +52,14 @@ console.log(generatedResult.toFixed(5));
 
 function isPalindrome(str){
 
-    let charToBeReplaced = /[\W_]/g;
-    let stringToLowerCase = str.toLowerCase().replace(charToBeReplaced, '');
-    let reverseString = stringToLowerCase.split('').reverse().join(''); 
-    return reverseString === stringToLowerCase;
+  // removing all spaces and turning the string into lower case
+    str  = str.replace(/[\W_]/g, '').toLowerCase();
+
+  // splitting all the characters, reversing the sting and joining all the characters back  
+    let reverseString = str.split('').reverse().join(''); 
+
+  // comparing entered and received strings
+    return str === reverseString;
 
 }
 
